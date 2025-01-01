@@ -8,10 +8,9 @@ export const AuthProvider = ({ children }) => {
   const [user, setuser] = useState({});
 
   const login = (token, user) => {
-    if(token&&id){
     settoken(token);
     setuser(user)
-    }
+  
     console.log(token)
     console.log(user)
     localStorage.setItem('token', token);
