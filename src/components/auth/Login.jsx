@@ -26,7 +26,10 @@ const {login}=useContext(Authcontext);
     const usercred= await axios.post(`${import.meta.env.VITE_BACKEND_URL}auth/login`,{email,password}).then((data=>{console.log(data);login(data.data.token,data.data.user);setloading(false)})).catch(err=>toast(err.message));
     setemail('');
     setpassword('');
-   navigate(`/home/${localId}`,{replace:true});
+    if(usercred!=null){
+      navigate(`/home/${localId}`,{replace:true});
+
+    }
   }
   return (
     <div >
