@@ -23,10 +23,15 @@ const {login}=useContext(Authcontext);
         return alertmsg("Password length should be between 6-12")
       }
       setloading(true)
-    const usercred= await axios.post(`${import.meta.env.VITE_BACKEND_URL}auth/login`,{email,password}).then((data=>{console.log(data);login(data.data.token,data.data.user);setloading(false)})).catch(err=>toast(err.message));
+    const usercred= await axios.post(`${import.meta.env.VITE_BACKEND_URL}auth/login`,{email,password}).then((data=>{console.log(data);login(data.data.token,data.data.user);setloading(false)})).catch(err=>alertmsg(err.message));
     setemail('');
     setpassword('');
     if(usercred!=null){
+      navigate(`/home/${localId}`,{replace:true});
+      alertmsg('Invalid email or password');
+
+    }
+    else{
       navigate(`/home/${localId}`,{replace:true});
 
     }
