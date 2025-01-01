@@ -14,7 +14,7 @@ const {login}=useContext(Authcontext);
   const[loading,setloading]=useState(false);
 
   const handlelogin=async()=>{
-    setloading(true)
+   
     const localId=localStorage.getItem('Id');
     if(!email||!password){
       return  alertmsg('Enter All The Fields');
@@ -22,7 +22,8 @@ const {login}=useContext(Authcontext);
       if(password.length<6 || password.length>12){
         return alertmsg("Password length should be between 6-12")
       }
-    const usercred= await axios.post(`${import.meta.env.VITE_BACKEND_URL}auth/login`,{email,password}).then((data=>{console.log(data);login(data.data.token,data.data.user);navigate(`/home/${localId}`);setloading(false)})).catch(err=>toast(err.response.data.message));
+      setloading(true)
+    const usercred= await axios.post(`${import.meta.env.VITE_BACKEND_URL}auth/login`,{email,password}).then((data=>{console.log(data);login(data.data.token,data.data.user);setloading(false)})).catch(err=>toast(err.response.data.message));
     setemail('');
     setpassword('');
    navigate(`/home/${localId}`,{replace:true});
