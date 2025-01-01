@@ -1,0 +1,94 @@
+#edit-des{
+position: absolute;
+top: 20vh;
+left: 72vw;
+background-color: black;
+color: white;
+font-weight: 500;
+text-transform: capitalize;
+max-width: 25vw;
+border:2px solid yellow;
+text-align: center;
+padding: 5px;
+min-height: 20vh;
+}
+#edit-des h1{
+    text-align: start;
+    border-bottom: 2px dotted white;
+  padding-bottom: 3px;
+}
+@media (max-width:430px){
+    #edit-h1{
+        font-size: 21px;
+        top: -8px;
+    }
+    #edit-form{
+        margin-top: 25px;
+        width: 70vw;
+    }
+    #edit-form label{
+        font-size: 15px;
+    }
+    #edit-form div{
+        display: flex;
+        
+    }
+  
+    #edit-form input{
+        width: 40vw;
+        height: 5vh;
+        margin-top: 1.5vh;
+        font-size: 10px;
+        margin-left: 12vw;
+        padding-left: 6px;
+    }
+    #edit-form textarea{
+        padding:0px 0px;
+        height: 10vh;
+    }
+    #edit-des{
+        font-size: 12px;
+        padding: -3px;
+        top: 79vh;
+      left: 60vw;
+      min-width:36vw;
+        max-height: 20vh;
+        overflow: scroll;
+    }
+    #img-div{
+        justify-content: start;
+        margin-left: 10vw;
+    }
+    #img-div img{
+        width:30vw ;
+    }
+    #edit-box{
+        width: 69.6vw;
+    }
+    #edit-box button{
+        width: 20vw;
+        height: 5vh;
+        font-size: 17px;
+
+    }
+    #des-div input{
+      margin-left: 2vw;
+      margin-top: -0.05vh;
+    }
+    #file-div{
+        justify-content: space-between;
+    }
+    #file-div input{
+        font-size: 13px;
+        margin-left: 6vw;
+    }
+    #file-div button{
+        width: 30vw;
+        margin-top: 2vw;
+        height: 5vh;
+        font-size: 13px;
+        padding: 0px 3vw;
+        background-color: yellow;
+    }
+ 
+}

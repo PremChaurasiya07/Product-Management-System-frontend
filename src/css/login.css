@@ -1,0 +1,36 @@
+@media (max-width:430px){
+    #login-div{
+        display: absolute;
+        width: 80vw;
+        left: 40px;
+        top:80px;
+        height: 70vh;
+        font-size: 12px;
+    }
+    #login-div h1{
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    #login-div label{
+        font-size: 16px;
+    }
+    #login-div input{
+        width: 50vw;
+        height: 6vh;
+    }
+    #login-div button{
+        width: 28vw;
+        height: 8vh;
+        left: 26vw;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: yellow;
+    }
+    #login-div p{
+        font-size: 12px;
+        left: 16vw;
+    }
+    #email-input{
+        margin-left: 8.5vw;
+    }
+}

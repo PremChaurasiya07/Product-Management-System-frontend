@@ -1,0 +1,19 @@
+@media(max-width:430px){
+    #delete-div{
+        width:80vw ;
+        left:10vw;
+        justify-content: start;
+        height: 25vh;
+       
+    }
+    #delete-h1 h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    #delete-div button{
+        width: 20vw;
+        height: 6vh;
+        font-size: 16px;
+        margin-top: -2vh;
+    }
+}

@@ -1,0 +1,62 @@
+
+.product-img{
+    transition: all;
+    transition-duration:0.1s;
+    width:6vw;
+    height: 6vh;
+}
+@media (max-width:430px){
+    #logout-icon{
+        margin-right: 3vw;
+        width: 7vw;
+        height: 7vw;
+        margin-top: 1.4vh;
+        font-size: 18px;
+  
+    }
+    #logout-div{
+width: 18vw;
+height: 5vh;
+    }
+    #logout-div span{
+        font-size: 16px;
+        padding-top:-2.5vh;
+    }
+    #logout-icon span{
+        margin-top: -1vh;
+       
+    }
+    #create{
+       margin-right:20vw;
+    }
+    #cancel-button{
+        width:7.2vw;
+        height: 5.5vh;
+        border-radius: 100%;
+        margin-left:10px;
+    }
+    #search-input{
+        width:50vw;
+        font-size: 13px;
+        padding-left: 5px;
+    }
+    .product-img{
+        width:50px;
+        height: 8vh; 
+    }
+    #table thead tr th{
+        font-size: 8px;
+    }
+    table tbody tr td{
+        font-size: 13px;
+    }
+    #img-th{
+        max-width: 30vw;
+    }
+    #logo{
+        margin-right: 3vw;
+    }
+    #loader{
+        left: 35vw;
+    }
+}
